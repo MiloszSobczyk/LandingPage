@@ -1,3 +1,66 @@
-.header {
+@import url('https://fonts.googleapis.com/css?family=EBGaramond&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'EBGaramond', serif;
+}
+
+body {
   display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex: auto;
+  display: flex;
+  align-items: center;
+  padding: 16px 48px 16px 48px;
+  gap: 16px;
+  max-height: 32px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(229, 109, 18); /*fiery orange for text and muddy brown for background like in dark souls*/
+  font-size: 24px;
+}
+
+.logo-img {
+  max-width: 48px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.logo {
+  font-weight: 500;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  border-radius: 32px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.audio-img {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+a {
+  color: rgb(229, 109, 18); /*a property overrides header text colour with its own value: blue*/
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  flex: auto;
+  background-color: #9c8949;
 }

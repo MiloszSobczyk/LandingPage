@@ -67,9 +67,13 @@ a {
   min-height: 800px;
   background-image: url(./images/main_shrine_2.png);
   background-color: #000000;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
-.hero-texts {
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
   padding: 50px;
   margin: 100px;
   border-radius: 32px;
@@ -83,7 +87,8 @@ a {
 }
 
 .rekindle {
-  width: 50%;
+  width: 80%;
+  margin-left: 7%;
   border: 0px;
   border-radius: 12px;
   color: rgb(137, 94, 66);
@@ -97,6 +102,18 @@ a {
 }
 
 .rekindle:focus {
-  color:  rgba(0, 0, 0);
+  color:  rgb(0, 0, 0);
   background-color: rgb(232, 59, 12);
+}
+
+.hero-texts {
+  width: 65%;
+  margin-right: auto;
+}
+
+.hero-img {
+  min-width: 250px;
+  width: 30%;
+  height: 30%;
+  border-radius: 16px;
 }

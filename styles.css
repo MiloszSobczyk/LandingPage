@@ -113,7 +113,9 @@ a {
 
 .rekindle:focus {
   color:  rgb(0, 0, 0);
-  background-color: rgb(232, 59, 12);
+  /* background-color: rgb(232, 59, 12); */
+  background: radial-gradient(circle, rgba(232,59,12,1) 5%, rgba(130,55,31,1) 97%);
+
 }
 
 .hero-img {
@@ -127,9 +129,10 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  padding: 50px 75px;
   gap: 50px;
-  background-color: rgb(0, 0, 0);
+  /* background-color: rgb(0, 0, 0); */
+  background: linear-gradient(180deg, rgb(31, 30, 30) 40%, rgba(130,55,31,1) 100%);
   color: rgb(229, 109, 18);
 }
 
@@ -149,12 +152,57 @@ a {
 
 .portrait {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
   height: 250px;
   width: 250px;
+  margin-bottom: 35px;
   border: 4px solid rgb(255, 255, 255);
   border-radius: 8px;
+  text-align: center;
 }
 
 .portrait-img {
   border-radius: 4px;
+}
+
+.quote-secondary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  gap: 20px;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 50%, rgba(130,55,31,1) 100%);
+  color:rgb(229, 109, 18);
+  font-size: 64px;
+  font-style: italic;
+}
+
+.quote-text {
+  flex: 1 1 1;
+  width: 80%;
+}
+
+.signature {
+  margin-left: 50%;
+  font-size: 24px;
+  font-style: normal;
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 50px;
+  background-image: url(./images/sparks.gif);
+  background-size: cover;
+}
+
+.action-field {
+  width: 60%;
+  padding: 50px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(120, 90, 61, 0.85) 19%, rgba(59,47,35, 0.75) 100%);  
+  color:rgb(229, 109, 18);
+  font-size: 24px;
 }
